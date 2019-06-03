@@ -1,4 +1,4 @@
-(evento);
+$(evento);
 
 function sendReqPost(obj) {
     var xhttp = new XMLHttpRequest();
@@ -8,7 +8,7 @@ function sendReqPost(obj) {
          window.location.reload();
       }
     };
-  xhttp.open("POST", "https://yesod-tycosta.c9users.io/produtos", true);
+  xhttp.open("POST", "https://yesod-tycosta.c9users.io/produto", true);
   xhttp.setRequestHeader("Content-Type","application/json");
   //necessario converter objeto para string
   xhttp.send(JSON.stringify(obj));
@@ -17,10 +17,10 @@ function sendReqPost(obj) {
 
 
 function evento(){
-    ("button").click(function(){
-        var nome = ("#nome").val();
-        var preco = parseFloat(("#preco").val());
-        var estoque = parseInt(("#estoque").val());
+    $("button").click(function(){
+        var nome = $("#nome").val();
+        var preco = parseFloat($("#preco").val());
+        var estoque = parseInt($("#estoque").val());
         sendReqPost({"nome":nome,"preco":preco,"qtEstoque":estoque});
     });
     sendReq();
@@ -32,7 +32,7 @@ function montaPagina(obj){
         tabela = tabela + "<tr> <td> " + reg.nome + "</td> <td> " + reg.preco +  "</td> <td> " + reg.qtEstoque + "</td> </tr>";
     });
     tabela += "</tbody> </table>";
-    (".lista").append(tabela);
+    $(".lista").append(tabela);
 }
 
 function sendReq() {

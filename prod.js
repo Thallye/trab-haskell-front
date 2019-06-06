@@ -1,5 +1,16 @@
 $(evento);
 
+function evento(){
+    $("btn-cadastro").click(function(){
+        var nome = $("#nome").val();
+        var preco = parseFloat($("#preco").val());
+        var estoque = parseInt($("#estoque").val());
+        sendReqPost({"nome":nome,"preco":preco,"qtEstoque":estoque});
+    });
+    sendReq();
+}
+
+
 function sendReqPost(obj) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -16,15 +27,6 @@ function sendReqPost(obj) {
 
 
 
-function evento(){
-    $("button").click(function(){
-        var nome = $("#nome").val();
-        var preco = parseFloat($("#preco").val());
-        var estoque = parseInt($("#estoque").val());
-        sendReqPost({"nome":nome,"preco":preco,"qtEstoque":estoque});
-    });
-    sendReq();
-}
 
 function montaPagina(obj){
     var tabela = "<table> <thead> <tr> <th> NOME </th> <th> PRECO </th> <th> QT </th> </tr> </thead> <tbody>";

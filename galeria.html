@@ -2,7 +2,7 @@
 <html>
 <head>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="galeria.js"></script>
     
 	<title>Adote!</title>
 	
@@ -36,7 +36,7 @@
 			<!-- HEADER BOX -->
 			<div class="box-header">
 					<div class="box-logo">
-							<a href="home.html"><img src="assets/img/dog.png" width="80" alt="Logo"></a>
+							<a href="home.html"><img src="assets/img/dog48.png" width="80" alt="Logo"></a>
 					</div>
 					<!-- BOTÃO MENU -->
 					<a class="box-primary-nav-trigger" href="#0">
@@ -50,12 +50,14 @@
 					<li class="box-label">Adote!</li>
 					<li><a href="home.html">Home</a> <i class="lnr lnr-home"></i></li>
 					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="produto.html">Nossa lojinha</a></li>
+					<li><a href="doacoes.html">Doações</a></li>
 					<li><a href="login.html">Login</a></li>
-					<li><a href="contact.html">contact</a></li>
+					<li><a href="contact.html">Contato</a></li>
 
 					<li class="box-label">Acompanhe-nos!</li>
-					<li class="box-social"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li class="box-social"><a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li class="box-social"><a href="https://pt-br.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li class="box-social"><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 			    </ul>
 			</nav>
 			<!-- FIM MENU -->
@@ -67,7 +69,7 @@
 		<div class="section-overlay"></div>
 		<div class="page-title">
 			<h2>Adote!</h2>
-			<div class="small-title">Este site tem o objetivo de ajudar cãezinhos e gatinhos a encontrarem um lar. </div>
+			<div class="small-title">Faça sua parte, dando amor, carinho e um lar. </div>
 		</div>
 	</div>
     
@@ -102,9 +104,8 @@
 				<div class="row categories-grid">
 					<nav class="categories">
 						<ul class="portfolio_filter">
-							<li><a href="" class="active" data-filter="*">todos</a></li>
-							<li><a href="" data-filter=".photography">cachorros</a></li>
-							<li><a href="" data-filter=".web">gatos</a></li>
+							<li><button class="btn btn-primary btn-block" onclick="window.location.href='cadanimal.html'"> Cadastrar </button></li>
+							<li><button type="submit" class="btn btn-primary btn-block" id="btn-consulta"> Consultar</button></li>	
 						</ul>
 					</nav>
 				</div>
@@ -114,7 +115,7 @@
 				<div class="row portfolio_container">
 					<!-- FOTO INDIVIDUAL 1 -->
 					<div class="col-md-4 web">
-						<a href="home.html" class="portfolio_item work-grid">
+						<a href="galeria.html" class="portfolio_item work-grid">
 							<img src="assets/img/gatos/gatos001.jpeg" alt="image">
 							<div class="portfolio_item_hover">
 								<div class="item_info">
@@ -127,7 +128,7 @@
 					
 					<!-- FOTO INDIVIDUAL 2 -->
 					<div class="col-md-4 photography">
-						<a href="home.html" class="portfolio_item work-grid">
+						<a href="galeria.html" class="portfolio_item work-grid">
 							<img src="assets/img/cachorros/cachorro001.jpg" alt="image">
 							<div class="portfolio_item_hover">
 								<div class="item_info">
@@ -140,7 +141,7 @@
 					
 					<!-- FOTO INDIVIDUAL 3 -->
 					<div class="col-md-4 web">
-						<a href="home.html" class="portfolio_item work-grid">
+						<a href="galeria.html" class="portfolio_item work-grid">
 							<img src="assets/img/gatos/gatos002.jpeg" alt="image">
 							<div class="portfolio_item_hover">
 								<div class="item_info">
@@ -153,7 +154,7 @@
 				
 					<!-- FOTO INDIVIDUAL 4 -->
 					<div class="col-md-4 photography">
-						<a href="home.html" class="portfolio_item work-grid">
+						<a href="galeria.html" class="portfolio_item work-grid">
 							<img src="assets/img/cachorros/cachorro002.jpg" alt="image">
 							<div class="portfolio_item_hover">
 								<div class="item_info">
@@ -166,11 +167,23 @@
 					
 					<!-- FOTO INDIVIDUAL 5 -->
 					<div class="col-md-4 web">
-						<a href="home.html" class="portfolio_item work-grid">
+						<a href="galeria.html" class="portfolio_item work-grid">
 							<img src="assets/img/gatos/gatos003.jpeg" alt="image">
 							<div class="portfolio_item_hover">
 								<div class="item_info">
 									<span>Gatinho</span>
+									<em>fotinha</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- FOTO INDIVIDUAL 6 -->
+					<div class="col-md-4" data-filter= "dogs">
+						<a href="galeria.html" class="portfolio_item work-grid">
+							<img src="assets/img/cachorros/cachorro003.jpg" alt="image">
+							<div class="portfolio_item_hover">
+								<div class="item_info">
+									<span>Cachorrinho</span>
 									<em>fotinha</em>
 								</div>
 							</div>

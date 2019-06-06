@@ -7,7 +7,7 @@
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="login.js"></script>
     
 	<title>Adote!</title>
 	
@@ -42,7 +42,7 @@
 			<!-- HEADER BOX -->
 			<div class="box-header">
 					<div class="box-logo">
-							<a href="home.html"><img src="assets/img/dog.png" width="80" alt="Logo"></a>
+							<a href="home.html"><img src="assets/img/dog48.png" width="80" alt="Logo"></a>
 					</div>
 					<!-- BOTÃO MENU -->
 					<a class="box-primary-nav-trigger" href="#0">
@@ -56,8 +56,10 @@
 					<li class="box-label">Adote!</li>
 					<li><a href="home.html">Home</a> <i class="lnr lnr-home"></i></li>
 					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="produto.html">Nossa lojinha</a></li>
+					<li><a href="doacoes.html">Doações</a></li>
 					<li><a href="login.html">Login</a></li>
-					<li><a href="contact.html">contact</a></li>
+					<li><a href="contact.html">Contato</a></li>
 
 					<li class="box-label">Acompanhe-nos!</li>
 					<li class="box-social"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -76,11 +78,7 @@
         <div class="container">
     		<div class="row text-center">
     		    <div class="col-xs-12 col-lg-3 col-md-3">
-                    <div class="count-item">
-                        <i class="lnr lnr-camera"></i>
-                        <div class="numscroller" data-slno='1' data-min='0' data-max='2056' data-delay='10' data-increment="10">2056</div>
-                        <div class="count-name-intro">Fotos</div>
-                    </div>
+                    
                 </div>
             </div>
     	</div>
@@ -96,29 +94,28 @@
 		    
 			
 <div class="row">
-	<aside class="col-sm-8">
-<p>Login</p>
+	<aside class="col-sm-10">
 <div class="card">
 <article class="card-body">
-<a href="" class="float-right btn btn-outline-primary">Sign up</a>
-<h4 class="card-title mb-4 mt-1">Sign in</h4>
+<a href="cadastro.html" class="float-right btn btn-outline-primary">Novo aqui?</a>
+<h4 class="card-title mb-4 mt-1">Entre!</h4>
 	 <form>
     <div class="form-group">
-    	<label>Your email</label>
-        <input name="" class="form-control" placeholder="Email" type="email">
+    	<label>Seu e-mail</label>
+        <input name="" class="form-control" placeholder="Digite seu e-mail" type="email" id="email" required="">
     </div> <!-- form-group// -->
     <div class="form-group">
-    	<a class="float-right" href="#">Forgot?</a>
-    	<label>Your password</label>
-        <input class="form-control" placeholder="******" type="password">
+    	<a class="float-right" href="#">Esqueceu a senha?</a>
+    	<label>Sua senha</label>
+        <input class="form-control" placeholder="******" type="password" id="senha" required="">
     </div> <!-- form-group// --> 
     <div class="form-group"> 
     <div class="checkbox">
-      <label> <input type="checkbox"> Save password </label>
+      <label> <input type="checkbox"> Lembrar-me </label>
     </div> <!-- checkbox .// -->
     </div> <!-- form-group// -->  
     <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+        <button type="submit" class="btn btn-primary btn-block" id="btn-entrar"> Entrar </button>
     </div> <!-- form-group// -->                                                           
 </form>
 </article>
@@ -127,18 +124,12 @@
 	</aside> <!-- col.// -->
 	<aside class="col-sm-6">
 
-					
-				
-				
-					
-					
-					
-				</div>
+			</div>
 	</section>
 
 	
 	<!-- RODAPÉ -->
-	<footer class="main-footer">
+	<footer style= "margin-top: 180px" class="main-footer">
 		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
 			<path d="M0 0 L50 100 L100 0 Z" fill="#fff" stroke="#fff"></path>
 		</svg>
